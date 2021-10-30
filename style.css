@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+* {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+}
+
+.img-container {
+  background-image: url(./images/europe-space.jpg);
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.inner-container {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  color: whitesmoke;
+  height: auto;
+  margin-top: 200px;
+}
+
+h1 {
+  font-size: 7em;
+  font-family: "Permanent Marker", cursive;
+}
