@@ -74,28 +74,13 @@ li a:hover {
   width: 20vh;
 }
 
-main {
-  background-image: url(./images/main-background.png);
+body {
+  background-image: url(./images/main-back.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
   height: 100%;
-}
-
-.container-div {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 10vw;
-  padding-right: 10vw;
-  justify-content: space-between;
-}
-
-.flex-item {
-  flex: 50%;
-  background-color: rgb(7, 6, 6);
-  width: 400px;
-  height: 400px;
 }
 
 .f1-info-text {
@@ -111,19 +96,33 @@ main {
   font-size: 2vw;
   text-shadow: 2px 2px rgb(255, 0, 0);
 }
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.image-div-main {
+  width: 35vw;
+  max-width: 30vw;
+  padding: 10px;
+  border: black 1px;
+  border-style: solid;
+  float: left;
+  margin: 15px;
 }
 
-.item {
-  width: 48%;
-  height: 100px;
-  margin-bottom: 2%;
+.figure-image {
+  width: 20vw;
 }
 
-.item:nth-child(3n) {
-  width: 100%;
+figure {
+  float: left;
+}
+
+figcaption {
+  color: whitesmoke;
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 1.2vw;
+}
+
+.main-paragraph {
+  color: whitesmoke;
+  font-size: 1.2vw;
+  font-family: "Oswald", sans-serif;
+  padding-left: 20px;
 }
