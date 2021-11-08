@@ -28,7 +28,7 @@ header {
   font-style: oblique;
   font-size: 12vw;
   color: #e10600;
-  text-shadow: 20px 10px rgb(27, 27, 27);
+  text-shadow: 2vh 1vh rgb(27, 27, 27);
 }
 
 #f1-logo {
@@ -54,6 +54,7 @@ li {
 }
 
 li a {
+  float: left;
   display: block;
   color: white;
   text-align: center;
@@ -74,7 +75,7 @@ li a:hover {
   width: 20vh;
 }
 
-body {
+main {
   background-image: url(./images/main-back.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -125,4 +126,17 @@ figcaption {
   font-size: 1.2vw;
   font-family: "Oswald", sans-serif;
   padding-left: 20px;
+  text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+.right {
+  float: right;
+}
+
+h2 {
+  color: whitesmoke;
+  font-size: 1.6vw;
+  font-family: "Oswald", sans-serif;
+  padding-left: 20px;
+  text-decoration: underline red;
 }
