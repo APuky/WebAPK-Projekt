@@ -1,6 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap");
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(39, 39, 39);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(184, 182, 182);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(97, 97, 97);
+}
+
 * {
   margin: 0;
 }
@@ -98,9 +120,9 @@ main {
 .main-headline {
   text-align: center;
   font-family: "Saira Condensed", sans-serif;
-  color: rgb(255, 255, 255);
-  font-size: 2vw;
-  text-shadow: 2px 2px #e10600;
+  color: #e10600;
+  font-size: 2.4vw;
+  text-shadow: 2px 2px #000000;
 }
 .image-div-main {
   width: 35vw;
@@ -150,8 +172,82 @@ figcaption {
 
 h2 {
   color: whitesmoke;
-  font-size: 1.6vw;
+  font-size: 2vw;
   font-family: "Oswald", sans-serif;
   padding-left: 20px;
   text-decoration: underline #e10600;
+}
+
+.footer-text {
+  font-size: 1vw;
+  color: rgba(255, 255, 255, 0.432);
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.span-left {
+  text-align: left;
+  float: left;
+  margin: 0px 1vw;
+}
+
+.back-to-top-link:link {
+  color: rgba(255, 255, 255, 0.432);
+  text-decoration: none;
+}
+
+.back-to-top-link:visited {
+  color: rgba(255, 255, 255, 0.432);
+  text-decoration: none;
+}
+
+.back-to-top-link:hover {
+  color: white;
+}
+
+/*GALLERY*/
+
+.flexbox-container-gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.flexbox-item-gallery {
+  background: rgb(247, 247, 247);
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 20px;
+  width: 400px;
+  height: 400px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  padding: 0px;
+  border: 2px solid red;
+}
+
+.flexbox-image {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  width: 400px;
+  height: 400px;
+
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: 1200ms;
+}
+
+.flexbox-image:hover {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
+.headline-gallery {
+  color: #000000;
+  font-size: 2.4vw;
+  text-shadow: 2px 2px #fff8f8;
 }
