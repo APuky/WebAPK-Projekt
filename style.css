@@ -5,6 +5,11 @@
   margin: 0;
 }
 
+hr {
+  border: 0.5px solid red;
+  margin: 0px 1vw;
+}
+
 header {
   background-image: url(./images/Grid-start.jpg);
   background-repeat: no-repeat;
@@ -101,7 +106,7 @@ main {
   width: 35vw;
   max-width: 30vw;
   padding: 10px;
-  border: #e10600 3px;
+  border: #e10600 0.2vw;
   border-style: solid;
   float: left;
   margin: 15px;
@@ -109,11 +114,15 @@ main {
 
 .figure-image {
   width: 24vw;
-  vertical-align: top;
+}
+
+.large {
+  width: 30vw;
 }
 
 .figure-image-smaller {
   width: 18vw;
+  float: left;
 }
 
 figure {
