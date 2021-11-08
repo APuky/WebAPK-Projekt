@@ -18,7 +18,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 50vh;
+  height: 40vh;
   overflow: hidden;
 }
 
@@ -76,7 +76,7 @@ li a:hover {
 }
 
 main {
-  background-image: url(./images/main-back.jpg);
+  background: url(./images/maybe-back.jpg), black;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -95,20 +95,25 @@ main {
   font-family: "Saira Condensed", sans-serif;
   color: rgb(255, 255, 255);
   font-size: 2vw;
-  text-shadow: 2px 2px rgb(255, 0, 0);
+  text-shadow: 2px 2px #e10600;
 }
 .image-div-main {
   width: 35vw;
   max-width: 30vw;
   padding: 10px;
-  border: black 1px;
+  border: #e10600 3px;
   border-style: solid;
   float: left;
   margin: 15px;
 }
 
 .figure-image {
-  width: 20vw;
+  width: 24vw;
+  vertical-align: top;
+}
+
+.figure-image-smaller {
+  width: 18vw;
 }
 
 figure {
@@ -119,10 +124,11 @@ figcaption {
   color: whitesmoke;
   font-family: "Saira Condensed", sans-serif;
   font-size: 1.2vw;
+  text-align: center;
 }
 
 .main-paragraph {
-  color: whitesmoke;
+  color: rgba(255, 255, 255, 0.808);
   font-size: 1.2vw;
   font-family: "Oswald", sans-serif;
   padding-left: 20px;
@@ -138,5 +144,5 @@ h2 {
   font-size: 1.6vw;
   font-family: "Oswald", sans-serif;
   padding-left: 20px;
-  text-decoration: underline red;
+  text-decoration: underline #e10600;
 }
