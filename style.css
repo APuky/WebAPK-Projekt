@@ -32,6 +32,10 @@ hr {
   margin: 0px 1vw;
 }
 
+html {
+  background-color: rgb(39, 39, 39);
+}
+
 header {
   background-image: url(./images/Grid-start.jpg);
   background-repeat: no-repeat;
@@ -250,4 +254,43 @@ h2 {
   color: #000000;
   font-size: 2.4vw;
   text-shadow: 2px 2px #fff8f8;
+}
+
+@media screen and (max-width: 1024px) {
+  li {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .main-paragraph {
+    font-size: 20px;
+  }
+
+  figcaption {
+    font-size: 18px;
+  }
+
+  .main-headline {
+    font-size: 28px;
+  }
+
+  .footer-text {
+    font-size: 10px;
+  }
+
+  .back-to-top-link:link {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.432);
+  }
+
+  .header-div {
+    height: 30vh;
+  }
+
+  #f1-logo {
+    height: 2vh;
+  }
 }
