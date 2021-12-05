@@ -37,7 +37,7 @@ html {
 }
 
 header {
-  background-image: url(./images/Grid-start.jpg);
+  background-image: url(./images/mexico-perez.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -54,7 +54,6 @@ header {
 }
 
 .header-text {
-  max-height: 100%;
   font-family: "Oswald", sans-serif;
   font-style: oblique;
   font-size: 12vw;
@@ -109,8 +108,6 @@ li a:hover {
 main {
   background: url(./images/maybe-back.jpg), black;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   position: relative;
   height: 100%;
 }
