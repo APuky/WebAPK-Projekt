@@ -312,3 +312,16 @@ h2 {
 
 /* RESPONSIVNESS */
 /*////////////////////////////////////////////*/
+
+#map {
+  height: 700px;
+  /* The height is 400 pixels */
+  width: 1000px;
+  /* The width is the width of the web page */
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+/*////////////////////////////////*/
+/*TRACKS*/

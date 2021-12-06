@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Formula 1" />
+    <meta
+      name="keywords"
+      content="F1, Formula 1, Hamilton, Verstappen, Bottas, Ferrari, Mercedes, Red Bull"
+    />
+    <meta name="author" content="Antun Pukanić" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const sakhir = { lat: 26.03, lng: 50.51 };
+        const hungaroring = { lat: 47.581, lng: 19.25 };
+        const imola = { lat: 44.344, lng: 11.714 };
+        const portimao = { lat: 37.231, lng: -8.628 };
+        const catalunya = { lat: 41.568, lng: 2.256 };
+        const monteCarlo = { lat: 43.735, lng: 7.421 };
+        const baku = { lat: 40.372, lng: 49.853 };
+        const paulRicard = { lat: 43.252, lng: 5.79 };
+        const rbr = { lat: 47.22, lng: 14.764 };
+        const silverstone = { lat: 52.072, lng: -1.014 };
+        const zandvoort = { lat: 52.389, lng: 4.541 };
+        const monza = { lat: 45.619, lng: 9.284 };
+        const sochi = { lat: 43.409, lng: 39.968 };
+        const istanbul = { lat: 40.955, lng: 29.409 };
+        const austin = { lat: 30.133, lng: -97.637 };
+        const ciudad = { lat: 19.405, lng: -99.093 };
+        const interlagos = { lat: -23.702, lng: -46.699 };
+        const jeddah = { lat: 21.632, lng: 39.104 };
+        const yasMarina = { lat: 24.469, lng: 54.605 };
+        const losail = { lat: 25.487, lng: 51.451 };
+
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 2,
+          center: hungaroring,
+        });
+
+        const bahrein = new google.maps.Marker({
+          position: sakhir,
+          map: map,
+        });
+
+        const hungary = new google.maps.Marker({
+          position: hungaroring,
+          map: map,
+        });
+
+        const italy1 = new google.maps.Marker({
+          position: imola,
+          map: map,
+        });
+
+        const portugal = new google.maps.Marker({
+          position: portimao,
+          map: map,
+        });
+
+        const spain = new google.maps.Marker({
+          position: catalunya,
+          map: map,
+        });
+
+        const monaco = new google.maps.Marker({
+          position: monteCarlo,
+          map: map,
+        });
+
+        const azerbaijan = new google.maps.Marker({
+          position: baku,
+          map: map,
+        });
+
+        const france = new google.maps.Marker({
+          position: paulRicard,
+          map: map,
+        });
+
+        const austria = new google.maps.Marker({
+          position: rbr,
+          map: map,
+        });
+
+        const uk = new google.maps.Marker({
+          position: silverstone,
+          map: map,
+        });
+
+        const netherlands = new google.maps.Marker({
+          position: zandvoort,
+          map: map,
+        });
+
+        const italy2 = new google.maps.Marker({
+          position: monza,
+          map: map,
+        });
+
+        const russia = new google.maps.Marker({
+          position: sochi,
+          map: map,
+        });
+
+        const turkey = new google.maps.Marker({
+          position: istanbul,
+          map: map,
+        });
+
+        const usa = new google.maps.Marker({
+          position: austin,
+          map: map,
+        });
+
+        const mexico = new google.maps.Marker({
+          position: ciudad,
+          map: map,
+        });
+
+        const brazil = new google.maps.Marker({
+          position: interlagos,
+          map: map,
+        });
+
+        const saudi = new google.maps.Marker({
+          position: jeddah,
+          map: map,
+        });
+
+        const uae = new google.maps.Marker({
+          position: yasMarina,
+          map: map,
+        });
+
+        const qatar = new google.maps.Marker({
+          position: losail,
+          map: map,
+        });
+      }
+    </script>
+    <title>Formula 1</title>
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-16x16.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-div">
+        <h1 class="header-text">Formula 1</h1>
+      </div>
+      <div>
+        <img id="f1-logo" src="./images/f1-logo-png.png" alt="f1 logo" />
+      </div>
+    </header>
+    <main style="background-image: url(./images/maybe-back.jpg)">
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html">F1 History</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="active" href="#about">Tracks</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+      <h1 class="main-headline">Track locations for the 2021 season</h1>
+      <div id="map"></div>
+    </main>
+    <footer>
+      <h3 class="footer-text">
+        <br /><span class="span-left"
+          ><a class="back-to-top-link" href="#top">Back to Top</a>
+        </span>
+        Copyright &copy 2021 Web Aplikacije Course<br />
+        <br />
+      </h3>
+    </footer>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwqvK8u8nm5nE4GEgzaIsdUbguT5DY_KA&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+  </body>
+</html>
