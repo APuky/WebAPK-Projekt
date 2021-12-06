@@ -34,6 +34,7 @@ hr {
 
 html {
   background-color: rgb(39, 39, 39);
+  scroll-behavior: smooth;
 }
 
 header {
@@ -314,13 +315,35 @@ h2 {
 /*////////////////////////////////////////////*/
 
 #map {
-  height: 700px;
+  height: 600px;
   /* The height is 400 pixels */
-  width: 1000px;
+  width: 70vw;
   /* The width is the width of the web page */
   display: flex;
   align-items: center;
   margin: auto;
+  margin-bottom: 20px;
+}
+
+#track-info-div {
+  /* The height is 400 pixels */
+  width: 80vw;
+  /* The width is the width of the web page */
+  margin: auto;
+  border: 2px solid #e10600;
+}
+
+#track-image {
+  width: 60vw;
+  padding-top: 20px;
+  margin: auto;
+  display: block;
+}
+
+#track-layout {
+  margin: auto;
+  display: block;
+  width: 60vw;
 }
 
 /*////////////////////////////////*/
