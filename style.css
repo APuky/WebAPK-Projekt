@@ -51,7 +51,6 @@ header {
   align-items: center;
   width: 100%;
   height: 40vh;
-  overflow: hidden;
 }
 
 .header-text {
@@ -134,6 +133,14 @@ main {
   border-style: solid;
   float: left;
   margin: 15px;
+
+  transform-origin: 50% 50%;
+  transition: transform 2s, filter 3s ease-in-out;
+}
+
+.image-div-main:hover {
+  filter: brightness(110%);
+  transform: scale(1.04);
 }
 
 .figure-image {
@@ -335,7 +342,6 @@ h2 {
 
 #track-image {
   width: 60vw;
-  padding-top: 20px;
   margin: auto;
   display: block;
 }
@@ -343,7 +349,7 @@ h2 {
 #track-layout {
   margin: auto;
   display: block;
-  width: 60vw;
+  width: 45vw;
 }
 
 /*////////////////////////////////*/

@@ -43,6 +43,9 @@
         bahrein.addListener("click", () => {
           document.getElementById("track-name").innerHTML="Bahrain International"
             document.getElementById("track-image").src = "https://motorsportguides.com/wp-content/uploads/2019/02/bahrain-international-circuit-aerial.jpeg"
+            document.getElementById("track-image").style.border="2px solid red"
+            document.getElementById("track-image").style.borderRadius="45px"
+            document.getElementById("track-image").style.marginBottom="20px"
             document.getElementById("track-description").innerHTML=bahreinInfo
             document.getElementById("track-layout").src ="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Bahrain_Circuit.png.transform/9col/image.png"
             document.getElementById("track-info").innerHTML="Track Length:&nbsp5.412 km <br>Laps:&nbsp57 <br>Lap Record:&nbsp1:31.447"
@@ -61,6 +64,9 @@
         hungary.addListener("click", () => {
           document.getElementById("track-name").innerHTML="Hungaroring"
             document.getElementById("track-image").src = "https://hungarytoday.hu/wp-content/uploads/2017/07/hungaroring-track-jo.jpg"
+            document.getElementById("track-image").style.border="2px solid red"
+            document.getElementById("track-image").style.borderRadius="45px"
+            document.getElementById("track-image").style.marginBottom="20px"
             document.getElementById("track-description").innerHTML=hungaryInfo
             document.getElementById("track-layout").src ="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Hungary_Circuit.png.transform/7col/image.png"
             document.getElementById("track-info").innerHTML="Track Length:&nbsp4.381 km <br>Laps:&nbsp70 <br>Lap Record:&nbsp1:16.627"
@@ -79,6 +85,9 @@
         belgium.addListener("click", () => {
           document.getElementById("track-name").innerHTML="Spa-Francorchamps"
             document.getElementById("track-image").src = "https://www.spa-francorchamps.be/sites/default/files/image/thumbnail_2020circuitaerien_paysage.jpeg"
+            document.getElementById("track-image").style.border="2px solid red"
+            document.getElementById("track-image").style.borderRadius="45px"
+            document.getElementById("track-image").style.marginBottom="20px"
             document.getElementById("track-description").innerHTML=belgiumInfo
             document.getElementById("track-layout").src ="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Belgium_Circuit.png.transform/7col/image.png"
             document.getElementById("track-info").innerHTML="Track Length:&nbsp7.004 km <br>Laps:&nbsp44 <br>Lap Record:&nbsp1:46.286"
@@ -97,6 +106,9 @@
         italy1.addListener("click", () => {
           document.getElementById("track-name").innerHTML="Imola"
             document.getElementById("track-image").src = "https://www.formula1.com/content/dam/fom-website/manual/Misc/2020/New-Races/DJI_0560.jpg"
+            document.getElementById("track-image").style.border="2px solid red"
+            document.getElementById("track-image").style.borderRadius="45px"
+            document.getElementById("track-image").style.marginBottom="20px"
             document.getElementById("track-description").innerHTML=imolaInfo
             document.getElementById("track-layout").src ="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Emilia_Romagna_Circuit.png.transform/7col/image.png"
             document.getElementById("track-info").innerHTML="Track Length:&nbsp4.959 km <br>Laps:&nbsp53 <br>Lap Record:&nbsp1:15.484"
@@ -115,6 +127,9 @@
         portugal.addListener("click", () => {
           document.getElementById("track-name").innerHTML="Algarve International"
             document.getElementById("track-image").src = "https://e0.365dm.com/20/10/2048x1152/skysports-portimao-portugal_5143652.jpg"
+            document.getElementById("track-image").style.border="2px solid red"
+            document.getElementById("track-image").style.borderRadius="45px"
+            document.getElementById("track-image").style.marginBottom="20px"
             document.getElementById("track-description").innerHTML=portugalInfo
             document.getElementById("track-layout").src ="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Portugal_Circuit.png.transform/7col/image.png"
             document.getElementById("track-info").innerHTML="Track Length:&nbsp 4.684 km <br>Laps:&nbsp66 <br>Lap Record:&nbsp1:18.750"
@@ -133,6 +148,9 @@
         spain.addListener("click", () => {
           document.getElementById("track-name").innerHTML="Circuit De Catalunya"
             document.getElementById("track-image").src = "https://d2xpg1khvwxlf1.cloudfront.net/production/images/original/31444-Circuit_de_Barcelona-Catalunya_F1_Experiences-a63f398b216c5d083c19a757a896255f.jpg"
+            document.getElementById("track-image").style.border="2px solid red"
+            document.getElementById("track-image").style.borderRadius="45px"
+            document.getElementById("track-image").style.marginBottom="20px"
             document.getElementById("track-description").innerHTML=spainInfo
             document.getElementById("track-layout").src ="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Spain_Circuit.png.transform/7col/image.png"
             document.getElementById("track-info").innerHTML="Track Length:&nbsp 4.655 km <br>Laps:&nbsp66 <br>Lap Record:&nbsp1:18.1.83"
@@ -151,6 +169,9 @@
         monaco.addListener("click", () => {
           document.getElementById("track-name").innerHTML="Circuit De Catalunya"
             document.getElementById("track-image").src = "https://d2xpg1khvwxlf1.cloudfront.net/production/images/original/31444-Circuit_de_Barcelona-Catalunya_F1_Experiences-a63f398b216c5d083c19a757a896255f.jpg"
+            document.getElementById("track-image").style.border="2px solid red"
+            document.getElementById("track-image").style.borderRadius="45px"
+            document.getElementById("track-image").style.marginBottom="20px"
             document.getElementById("track-description").innerHTML=monacoInfo
             document.getElementById("track-layout").src ="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Spain_Circuit.png.transform/7col/image.png"
             document.getElementById("track-info").innerHTML="Track Length:&nbsp 4.655 km <br>Laps:&nbsp66 <br>Lap Record:&nbsp1:18.1.83"
