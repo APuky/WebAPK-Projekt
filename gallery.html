@@ -21,7 +21,7 @@
       .slider {
         width: 1920px;
         height: 1080px;
-        background-color: yellow;
+        background-color: rgba(255, 255, 0, 0);
         margin-left: auto;
         margin-right: auto;
         margin-top: 0px;
@@ -30,7 +30,7 @@
       }
       .image-container {
         width: 9600px;
-        background-color: pink;
+        background-color: rgba(255, 0, 43, 0);
         height: 1080px;
         clear: both;
         position: relative;
@@ -86,11 +86,16 @@
         background-color: rgb(5, 173, 5);
       }
 
+      .slide-img-size {
+        width: 1920px;
+        height: 1000px;
+      }
+
       @media screen and (max-width: 1920px) {
         .slider {
           width: 1600px;
           height: 900px;
-          background-color: yellow;
+          background-color: rgba(255, 255, 0, 0);
           margin-left: auto;
           margin-right: auto;
           margin-top: 0px;
@@ -100,7 +105,7 @@
 
         .image-container {
           width: 8000px;
-          background-color: pink;
+          background-color: rgba(0, 0, 0, 0);
           height: 900px;
           clear: both;
           position: relative;
@@ -155,13 +160,18 @@
         .buttons a:hover {
           background-color: rgb(5, 173, 5);
         }
+
+        .slide-img-size {
+          width: 1600px;
+          height: 800px;
+        }
       }
 
       @media screen and (max-width: 1440px) {
         .slider {
           width: 800px;
-          height: 600px;
-          background-color: yellow;
+          height: 460px;
+          background-color: rgba(255, 255, 0, 0);
           margin-left: auto;
           margin-right: auto;
           margin-top: 0px;
@@ -170,8 +180,8 @@
         }
         .image-container {
           width: 4000px;
-          background-color: pink;
-          height: 600px;
+          background-color: rgba(255, 192, 203, 0);
+          height: 460px;
           clear: both;
           position: relative;
           -webkit-transition: left 2s;
@@ -181,7 +191,7 @@
         }
         .slide {
           width: 800px;
-          height: 600px;
+          height: 460px;
           float: left;
           margin: 0px;
           padding: 0px;
@@ -225,13 +235,18 @@
         .buttons a:hover {
           background-color: rgb(5, 173, 5);
         }
+
+        .slide-img-size {
+          width: 800px;
+          height: 380px;
+        }
       }
 
       @media screen and (max-width: 810px) {
         .slider {
           width: 600px;
           height: 400px;
-          background-color: rgb(0, 0, 0);
+          background-color: rgba(0, 0, 0, 0);
           margin-left: auto;
           margin-right: auto;
           margin-top: 0px;
@@ -240,7 +255,7 @@
         }
         .image-container {
           width: 3000px;
-          background-color: pink;
+          background-color: rgba(255, 192, 203, 0);
           height: 400px;
           clear: both;
           position: relative;
@@ -284,13 +299,17 @@
           background-color: #e10600;
           border: 1px solid black;
         }
+        .slide-img-size {
+          width: 620px;
+          height: 300px;
+        }
       }
 
       @media screen and (max-width: 600px) {
         .slider {
           width: 300px;
           height: 168px;
-          background-color: rgb(0, 0, 0);
+          background-color: rgba(0, 0, 0, 0);
           margin-left: auto;
           margin-right: auto;
           margin-top: 0px;
@@ -299,7 +318,7 @@
         }
         .image-container {
           width: 1500px;
-          background-color: pink;
+          background-color: rgba(255, 192, 203, 0);
           height: 168px;
           clear: both;
           position: relative;
@@ -343,6 +362,10 @@
           background-color: #e10600;
           border: 1px solid black;
         }
+        .slide-img-size {
+          width: 300px;
+          height: 120px;
+        }
       }
     </style>
   </head>
@@ -377,26 +400,59 @@
         <span id="s4" class="slide-4"></span>
         <span id="s5" class="slide-5"></span>
         <div class="image-container">
-          <img
-            src="https://www.racefans.net/wp-content/uploads/2021/12/racefansdotnet-21-12-05-17-N-03-8.jpg"
-            class="slide"
-          />
-          <img
-            src="https://www.racefans.net/wp-content/uploads/2021/12/racefansdotnet-21-12-05-17-N-19-3.jpg"
-            class="slide"
-          />
-          <img
-            src="https://www.racefans.net/wp-content/uploads/2021/12/racefansdotnet-21-12-05-18-N-13-2.jpg"
-            class="slide"
-          />
-          <img
-            src="https://www.racefans.net/wp-content/uploads/2021/12/racefansdotnet-21-12-05-18-N-43-15-scaled.jpg"
-            class="slide"
-          />
-          <img
-            src="https://www.racefans.net/wp-content/uploads/2021/12/racefansdotnet-21-12-05-17-N-06-7.jpg"
-            class="slide"
-          />
+          <figure class="slide">
+            <img
+              class="slide-img-size"
+              src="https://www.racefans.net/wp-content/uploads/2021/12/racefansdotnet-21-12-05-17-N-03-8.jpg"
+              ;
+            />
+            <figcaption>
+              Jeddah Corniche Circuit start with Hamilton in the lead, Bottas
+              close second and Verstappen third.
+            </figcaption>
+          </figure>
+          <figure class="slide">
+            <img
+              src="https://www.racefans.net/wp-content/uploads/2021/12/racefansdotnet-21-12-05-17-N-19-3.jpg"
+              class="slide-img-size"
+            />
+            <figcaption>
+              Turn 1 lap one, Hamilton and Bottas staying ahead of Verstappen.
+            </figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img
+              src="https://www.racefans.net/wp-content/uploads/2021/12/racefansdotnet-21-12-05-18-N-13-2.jpg"
+              class="slide-img-size"
+            />
+            <figcaption>
+              First restart, Mick Schumacher and his Haas are missing due to a
+              crash.
+            </figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img
+              src="https://www.racefans.net/wp-content/uploads/2021/12/racefansdotnet-21-12-05-18-N-23-10.jpg"
+              class="slide-img-size"
+            />
+            <figcaption>
+              First lap of the second restart, Verstappen dives into the corner
+              on the inside, overtaking Hamilton and Ocon.
+            </figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img
+              src="https://www.racefans.net/wp-content/uploads/2021/12/racefansdotnet-21-12-06-15-47-51-8.jpg"
+              class="slide-img-size"
+            />
+            <figcaption>
+              Verstappen going wide and taking the lead with and unsafe reentry
+              which would gain him a 5 second penalty.
+            </figcaption>
+          </figure>
         </div>
         <div class="buttons">
           <a href="#s1"></a>
