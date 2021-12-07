@@ -17,6 +17,334 @@
       href="./images/favicon-16x16.png"
       type="image/x-icon"
     />
+    <style>
+      .slider {
+        width: 1920px;
+        height: 1080px;
+        background-color: yellow;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 9600px;
+        background-color: pink;
+        height: 1080px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        width: 1920px;
+        height: 1080px;
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        transform-origin: 50% 50%;
+        transition: transform 1s, filter 1s ease-in-out;
+      }
+
+      .slide:hover {
+        filter: brightness(110%);
+        transform: scale(1.03);
+      }
+      .slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      .slide-2:target ~ .image-container {
+        left: -1920px;
+      }
+      .slide-3:target ~ .image-container {
+        left: -3840px;
+      }
+      .slide-4:target ~ .image-container {
+        left: -5760px;
+      }
+      .slide-5:target ~ .image-container {
+        left: -7680px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: #e10600;
+        border: 1px solid black;
+      }
+
+      .buttons a:hover {
+        background-color: rgb(5, 173, 5);
+      }
+
+      @media screen and (max-width: 1920px) {
+        .slider {
+          width: 1600px;
+          height: 900px;
+          background-color: yellow;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 0px;
+          text-align: center;
+          overflow: hidden;
+        }
+
+        .image-container {
+          width: 8000px;
+          background-color: pink;
+          height: 900px;
+          clear: both;
+          position: relative;
+          -webkit-transition: left 2s;
+          -moz-transition: left 2s;
+          -o-transition: left 2s;
+          transition: left 2s;
+        }
+        .slide {
+          width: 1600px;
+          height: 900px;
+          float: left;
+          margin: 0px;
+          padding: 0px;
+          position: relative;
+          transform-origin: 50% 50%;
+          transition: transform 1s, filter 1s ease-in-out;
+        }
+
+        .slide:hover {
+          filter: brightness(110%);
+          transform: scale(1.03);
+        }
+        .slide-1:target ~ .image-container {
+          left: 0px;
+        }
+        .slide-2:target ~ .image-container {
+          left: -1600px;
+        }
+        .slide-3:target ~ .image-container {
+          left: -3200px;
+        }
+        .slide-4:target ~ .image-container {
+          left: -4800px;
+        }
+        .slide-5:target ~ .image-container {
+          left: -6400px;
+        }
+        .buttons {
+          position: relative;
+          top: -20px;
+        }
+        .buttons a {
+          display: inline-block;
+          height: 15px;
+          width: 15px;
+          border-radius: 50px;
+          background-color: #e10600;
+          border: 1px solid black;
+        }
+
+        .buttons a:hover {
+          background-color: rgb(5, 173, 5);
+        }
+      }
+
+      @media screen and (max-width: 1440px) {
+        .slider {
+          width: 800px;
+          height: 600px;
+          background-color: yellow;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 0px;
+          text-align: center;
+          overflow: hidden;
+        }
+        .image-container {
+          width: 4000px;
+          background-color: pink;
+          height: 600px;
+          clear: both;
+          position: relative;
+          -webkit-transition: left 2s;
+          -moz-transition: left 2s;
+          -o-transition: left 2s;
+          transition: left 2s;
+        }
+        .slide {
+          width: 800px;
+          height: 600px;
+          float: left;
+          margin: 0px;
+          padding: 0px;
+          position: relative;
+          transform-origin: 50% 50%;
+          transition: transform 1s, filter 1s ease-in-out;
+        }
+
+        .slide:hover {
+          filter: brightness(110%);
+          transform: scale(1.03);
+        }
+        .slide-1:target ~ .image-container {
+          left: 0px;
+        }
+        .slide-2:target ~ .image-container {
+          left: -800px;
+        }
+        .slide-3:target ~ .image-container {
+          left: -1600px;
+        }
+        .slide-4:target ~ .image-container {
+          left: -2400px;
+        }
+        .slide-5:target ~ .image-container {
+          left: -3200px;
+        }
+        .buttons {
+          position: relative;
+          top: -20px;
+        }
+        .buttons a {
+          display: inline-block;
+          height: 15px;
+          width: 15px;
+          border-radius: 50px;
+          background-color: #e10600;
+          border: 1px solid black;
+        }
+
+        .buttons a:hover {
+          background-color: rgb(5, 173, 5);
+        }
+      }
+
+      @media screen and (max-width: 810px) {
+        .slider {
+          width: 600px;
+          height: 400px;
+          background-color: rgb(0, 0, 0);
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 0px;
+          text-align: center;
+          overflow: hidden;
+        }
+        .image-container {
+          width: 3000px;
+          background-color: pink;
+          height: 400px;
+          clear: both;
+          position: relative;
+          -webkit-transition: left 2s;
+          -moz-transition: left 2s;
+          -o-transition: left 2s;
+          transition: left 2s;
+        }
+        .slide {
+          width: 600px;
+          height: 400px;
+          float: left;
+          margin: 0px;
+          padding: 0px;
+          position: relative;
+        }
+        .slide-1:target ~ .image-container {
+          left: 0px;
+        }
+        .slide-2:target ~ .image-container {
+          left: -600px;
+        }
+        .slide-3:target ~ .image-container {
+          left: -1200px;
+        }
+        .slide-4:target ~ .image-container {
+          left: -1800px;
+        }
+        .slide-5:target ~ .image-container {
+          left: -2400px;
+        }
+        .buttons {
+          position: relative;
+          top: -20px;
+        }
+        .buttons a {
+          display: inline-block;
+          height: 15px;
+          width: 15px;
+          border-radius: 50px;
+          background-color: #e10600;
+          border: 1px solid black;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .slider {
+          width: 300px;
+          height: 168px;
+          background-color: rgb(0, 0, 0);
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 0px;
+          text-align: center;
+          overflow: hidden;
+        }
+        .image-container {
+          width: 1500px;
+          background-color: pink;
+          height: 168px;
+          clear: both;
+          position: relative;
+          -webkit-transition: left 2s;
+          -moz-transition: left 2s;
+          -o-transition: left 2s;
+          transition: left 2s;
+        }
+        .slide {
+          width: 300px;
+          height: 168px;
+          float: left;
+          margin: 0px;
+          padding: 0px;
+          position: relative;
+        }
+        #slide-1:target ~ .image-container {
+          left: 0px;
+        }
+        #slide-2:target ~ .image-container {
+          left: -300px;
+        }
+        #slide-3:target ~ .image-container {
+          left: -600px;
+        }
+        #slide-4:target ~ .image-container {
+          left: -900px;
+        }
+        #slide-5:target ~ .image-container {
+          left: -1200px;
+        }
+        .buttons {
+          position: relative;
+          top: -20px;
+        }
+        .buttons a {
+          display: inline-block;
+          height: 15px;
+          width: 15px;
+          border-radius: 50px;
+          background-color: #e10600;
+          border: 1px solid black;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -33,46 +361,49 @@
           <li><a href="index.html">F1 History</a></li>
           <li><a href="#news">News</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="tracks.html">Tracks</a></li>
-          <li><a class="active" href="#gallery">Gallery</a></li>
+          <li><a href="tracks.html">2021 Season Tracks</a></li>
+          <li><a class="active" href="#gallery">2021 Season Gallery</a></li>
         </ul>
       </nav>
       <div>
         <h1 class="main-headline">Current season Gallery</h1>
       </div>
-      <div class="flexbox-container-gallery">
-        <div class="flexbox-item-gallery">
-          <img class="flexbox-image" src="./images/ver-test.jfif" alt="" />
-        </div>
-        <div class="flexbox-item-gallery">
+      <h2 style="text-align: center">Round 21 Saudi Arabia</h2>
+
+      <div class="slider">
+        <span id="s1" class="slide-1"></span>
+        <span id="s2" class="slide-2"></span>
+        <span id="s3" class="slide-3"></span>
+        <span id="s4" class="slide-4"></span>
+        <span id="s5" class="slide-5"></span>
+        <div class="image-container">
           <img
-            class="flexbox-image"
-            src="./images/lewis-hamilton-mercedes-w12-1.jpg"
-            alt=""
+            src="https://www.racefans.net/wp-content/uploads/2021/12/racefansdotnet-21-12-05-17-N-03-8.jpg"
+            class="slide"
+          />
+          <img
+            src="https://www.racefans.net/wp-content/uploads/2021/12/racefansdotnet-21-12-05-17-N-19-3.jpg"
+            class="slide"
+          />
+          <img
+            src="https://www.racefans.net/wp-content/uploads/2021/12/racefansdotnet-21-12-05-18-N-13-2.jpg"
+            class="slide"
+          />
+          <img
+            src="https://www.racefans.net/wp-content/uploads/2021/12/racefansdotnet-21-12-05-18-N-43-15-scaled.jpg"
+            class="slide"
+          />
+          <img
+            src="https://www.racefans.net/wp-content/uploads/2021/12/racefansdotnet-21-12-05-17-N-06-7.jpg"
+            class="slide"
           />
         </div>
-        <div class="flexbox-item-gallery">
-          <img
-            class="flexbox-image"
-            src="./images/ferrari-turkey.jpg"
-            alt=""
-          />
-        </div>
-                <div class="flexbox-item-gallery">
-          <img class="flexbox-image" src="./images/monza.jpg" alt="" />
-        </div>
-                <div class="flexbox-item-gallery">
-          <img class="flexbox-image" src="./images/ver-istanbul.jpg" alt="" />
-        </div>
-                <div class="flexbox-item-gallery">
-          <img class="flexbox-image" src="./images/mexico.jpg" alt="" />
-        </div>
-                <div class="flexbox-item-gallery">
-          <img class="flexbox-image" src="./images/mexico.jpg" alt="" />
-        </div>
-         <div class="flexbox-item-gallery">
-          <img class="flexbox-image" src="./images/Ricc.jpg" alt="" />
-        </div>
+        <div class="buttons">
+          <a href="#s1"></a>
+          <a href="#s2"></a>
+          <a href="#s3"></a>
+          <a href="#s4"></a>
+          <a href="#s5"></a>
         </div>
       </div>
     </main>
