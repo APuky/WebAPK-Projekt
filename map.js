@@ -69,7 +69,7 @@
             document.getElementById("track-image").style.marginBottom="20px"
             document.getElementById("track-description").innerHTML=hungaryInfo
             document.getElementById("track-layout").src ="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Hungary_Circuit.png.transform/7col/image.png"
-            document.getElementById("track-info").innerHTML="Track Length:&nbsp4.381 km <br>Laps:&nbsp70 <br>Lap Record:&nbsp1:16.627"
+            document.getElementById("track-info").innerHTML="Track Length:&nbsp4.381 km <br>Laps:&nbsp70 <br>Lap Record:&nbsp1:16.627 Lewis Hamilton(2020)"
             document.getElementById("track-name").scrollIntoView()
         });
 
@@ -90,7 +90,7 @@
             document.getElementById("track-image").style.marginBottom="20px"
             document.getElementById("track-description").innerHTML=belgiumInfo
             document.getElementById("track-layout").src ="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Belgium_Circuit.png.transform/7col/image.png"
-            document.getElementById("track-info").innerHTML="Track Length:&nbsp7.004 km <br>Laps:&nbsp44 <br>Lap Record:&nbsp1:46.286"
+            document.getElementById("track-info").innerHTML="Track Length:&nbsp7.004 km <br>Laps:&nbsp44 <br>Lap Record:&nbsp1:46.286 Valtteri Bottas(2018)"
             document.getElementById("track-name").scrollIntoView()
         });
 

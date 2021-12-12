@@ -1,0 +1,412 @@
+.slider {
+  width: 1920px;
+  height: 1080px;
+  background-color: rgba(255, 255, 0, 0);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  text-align: center;
+  overflow: hidden;
+}
+.image-container {
+  width: 9600px;
+  background-color: rgba(255, 0, 43, 0);
+  height: 1080px;
+  clear: both;
+  position: relative;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s;
+}
+.slide {
+  width: 1920px;
+  height: 1080px;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  transform-origin: 50% 50%;
+  transition: transform 1s, filter 1s ease-in-out;
+}
+
+.slide:hover {
+  filter: brightness(110%);
+  transform: scale(1.03);
+}
+.slide-1:target ~ .image-container {
+  left: 0px;
+}
+.slide-2:target ~ .image-container {
+  left: -1920px;
+}
+.slide-3:target ~ .image-container {
+  left: -3840px;
+}
+.slide-4:target ~ .image-container {
+  left: -5760px;
+}
+.slide-5:target ~ .image-container {
+  left: -7680px;
+}
+.buttons {
+  position: relative;
+  top: -20px;
+}
+.buttons a {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: #e10600;
+  border: 1px solid black;
+}
+
+.buttons a:hover {
+  background-color: rgb(5, 173, 5);
+}
+
+.slide-img-size {
+  width: 1920px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 1920px) {
+  .slider {
+    width: 1600px;
+    height: 900px;
+    background-color: rgba(255, 255, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .image-container {
+    width: 8000px;
+    background-color: rgba(0, 0, 0, 0);
+    height: 900px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+  }
+  .slide {
+    width: 1600px;
+    height: 900px;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    transform-origin: 50% 50%;
+    transition: transform 1s, filter 1s ease-in-out;
+  }
+
+  .slide:hover {
+    filter: brightness(110%);
+    transform: scale(1.03);
+  }
+  .slide-1:target ~ .image-container {
+    left: 0px;
+  }
+  .slide-2:target ~ .image-container {
+    left: -1600px;
+  }
+  .slide-3:target ~ .image-container {
+    left: -3200px;
+  }
+  .slide-4:target ~ .image-container {
+    left: -4800px;
+  }
+  .slide-5:target ~ .image-container {
+    left: -6400px;
+  }
+  .buttons {
+    position: relative;
+    top: -40px;
+  }
+  .buttons a {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+    background-color: #e10600;
+    border: 1px solid black;
+  }
+
+  .buttons a:hover {
+    background-color: rgb(5, 173, 5);
+  }
+
+  .slide-img-size {
+    width: 1600px;
+    height: 800px;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .slider {
+    width: 1024px;
+    height: 576px;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .image-container {
+    width: 5120px;
+    background-color: rgba(255, 192, 203, 0);
+    height: 576px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+  }
+  .slide {
+    width: 1024px;
+    height: 576px;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+  }
+  .slide-1:target ~ .image-container {
+    left: 0px;
+  }
+  .slide-2:target ~ .image-container {
+    left: -1024px;
+  }
+  .slide-3:target ~ .image-container {
+    left: -2048px;
+  }
+  .slide-4:target ~ .image-container {
+    left: -3072px;
+  }
+  .slide-5:target ~ .image-container {
+    left: -3096px;
+  }
+  .buttons {
+    position: relative;
+    top: -20px;
+  }
+  .buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: #e10600;
+    border: 1px solid black;
+  }
+  .slide-img-size {
+    width: 900px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .slider {
+    width: 800px;
+    height: 460px;
+    background-color: rgba(255, 255, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .image-container {
+    width: 4000px;
+    background-color: rgba(255, 192, 203, 0);
+    height: 460px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+  }
+  .slide {
+    width: 800px;
+    height: 460px;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    transform-origin: 50% 50%;
+    transition: transform 1s, filter 1s ease-in-out;
+  }
+
+  .slide:hover {
+    filter: brightness(110%);
+    transform: scale(1.03);
+  }
+  .slide-1:target ~ .image-container {
+    left: 0px;
+  }
+  .slide-2:target ~ .image-container {
+    left: -800px;
+  }
+  .slide-3:target ~ .image-container {
+    left: -1600px;
+  }
+  .slide-4:target ~ .image-container {
+    left: -2400px;
+  }
+  .slide-5:target ~ .image-container {
+    left: -3200px;
+  }
+  .buttons {
+    position: relative;
+    top: -20px;
+  }
+  .buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: #e10600;
+    border: 1px solid black;
+  }
+
+  .buttons a:hover {
+    background-color: rgb(5, 173, 5);
+  }
+
+  .slide-img-size {
+    width: 800px;
+    height: 380px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .slider {
+    width: 600px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .image-container {
+    width: 3000px;
+    background-color: rgba(255, 192, 203, 0);
+    height: 400px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+  }
+  .slide {
+    width: 600px;
+    height: 400px;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+  }
+  .slide-1:target ~ .image-container {
+    left: 0px;
+  }
+  .slide-2:target ~ .image-container {
+    left: -600px;
+  }
+  .slide-3:target ~ .image-container {
+    left: -1200px;
+  }
+  .slide-4:target ~ .image-container {
+    left: -1800px;
+  }
+  .slide-5:target ~ .image-container {
+    left: -2400px;
+  }
+  .buttons {
+    position: relative;
+    top: -20px;
+  }
+  .buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: #e10600;
+    border: 1px solid black;
+  }
+  .slide-img-size {
+    width: 620px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .slider {
+    width: 300px;
+    height: 168px;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .image-container {
+    width: 1500px;
+    background-color: rgba(255, 192, 203, 0);
+    height: 168px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+  }
+  .slide {
+    width: 300px;
+    height: 168px;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+  }
+  .slide-1:target ~ .image-container {
+    left: 0px;
+  }
+  .slide-2:target ~ .image-container {
+    left: -300px;
+  }
+  .slide-3:target ~ .image-container {
+    left: -600px;
+  }
+  .slide-4:target ~ .image-container {
+    left: -900px;
+  }
+  .slide-5:target ~ .image-container {
+    left: -1200px;
+  }
+  .buttons {
+    position: relative;
+    top: -20px;
+  }
+  .buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: #e10600;
+    border: 1px solid black;
+  }
+  .slide-img-size {
+    width: 300px;
+    height: 120px;
+  }
+}

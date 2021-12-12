@@ -50,7 +50,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 40vh;
+  height: 25vh;
 }
 
 .header-text {
@@ -110,6 +110,8 @@ main {
   background-repeat: no-repeat;
   position: relative;
   height: 100%;
+  min-height: 100%;
+  padding-bottom: 100px;
 }
 
 .f1-info-text {
@@ -145,6 +147,12 @@ main {
 
 .figure-image {
   width: 24vw;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  transform-origin: 50% 65%;
+  transition: transform 1s, filter 10s ease-in-out;
+  filter: brightness(100%);
 }
 
 .large {
@@ -153,10 +161,6 @@ main {
 
 .figure-image-smaller {
   width: 18vw;
-  float: left;
-}
-
-figure {
   float: left;
 }
 
@@ -186,9 +190,16 @@ h2 {
   padding-left: 20px;
   text-decoration: underline #e10600;
 }
+footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
 
 .footer-text {
-  font-size: 1vw;
+  font-size: 15px;
   color: rgba(255, 255, 255, 0.432);
   text-align: center;
   background-color: rgb(0, 0, 0);
@@ -217,43 +228,50 @@ h2 {
 /*////////////////////////////////*/
 /*GALLERY*/
 
-.flexbox-container-gallery {
+.flexbox-container {
+  margin: 20px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
-.flexbox-item-gallery {
-  background: rgb(247, 247, 247);
-  padding: 0px;
+.flexbox-item {
+  background: rgba(247, 247, 247, 0);
+  max-width: 40%;
   margin: 30px;
   /*margin-bottom: 20px;*/
-  width: 390px;
-  height: 400px;
-  line-height: 150px;
   color: white;
   font-weight: bold;
   font-size: 3em;
-  text-align: center;
+  /*text-align: center;*/
   padding: 0px;
-  border: 2px solid red;
+
+  border-bottom-right-radius: 20px;
   overflow: hidden;
 
-  /*transform-origin: 50% 65%;
+  transform-origin: 50% 65%;
   transition: transform 1s, filter 10s ease-in-out;
   filter: brightness(100%);
-  */
 }
 
-/*
-.flexbox-item-gallery:hover {
-  filter: brightness(110%);
-  transform: scale(1.3);
+.flexbox-item-figure {
+  border-right: 2px solid rgb(196, 196, 196);
+  border-bottom: 2px solid rgb(196, 196, 196);
+  border-bottom-right-radius: 20px;
   overflow: hidden;
 }
-*/
 
-.flexbox-image {
+.flexbox-item-figure:hover {
+  border-right: 2px solid #e10600;
+  border-bottom: 2px solid #e10600;
+}
+
+.flexbox-item-figure:hover > .figure-image {
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+.flexbox-item-figure:hover > .flexbox-image {
   object-fit: cover;
   max-width: 100%;
   max-height: 100%;
@@ -266,7 +284,6 @@ h2 {
 }
 
 .flexbox-image:hover {
-  filter: brightness(110%);
   transform: scale(1.5);
 }
 
@@ -351,6 +368,3 @@ h2 {
   display: block;
   width: 45vw;
 }
-
-/*////////////////////////////////*/
-/*TRACKS*/
