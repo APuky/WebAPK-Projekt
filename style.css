@@ -59,10 +59,13 @@ header {
   font-size: 12vw;
   color: #e10600;
   text-shadow: 2vh 1vh rgb(27, 27, 27);
+  font-weight: 900;
+  margin-bottom: 10px;
 }
 
 #f1-logo {
   height: 4vh;
+  vertical-align: top;
 }
 
 #f1-logo-nav {
@@ -95,6 +98,7 @@ li a {
 li a:hover {
   color: rgb(255, 0, 0);
   background-color: rgb(44, 42, 42);
+  text-decoration: none;
 }
 
 .active {
@@ -192,6 +196,7 @@ div a:hover {
 }
 
 h2 {
+  padding-top: 20px;
   color: whitesmoke;
   font-size: 2vw;
   font-family: "Oswald", sans-serif;
@@ -212,6 +217,10 @@ footer {
   text-align: center;
   background-color: rgb(0, 0, 0);
   margin: 0px;
+  font-family: -BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 500;
 }
 
 .span-left {
@@ -219,19 +228,19 @@ footer {
   float: left;
   margin: 0px 1vw;
 }
-
-.back-to-top-link:link {
-  color: rgba(255, 255, 255, 0.432);
+.back-to-top-link {
+  font-size: 20px;
+  color: white;
   text-decoration: none;
 }
 
 .back-to-top-link:visited {
-  color: rgba(255, 255, 255, 0.432);
+  color: white;
   text-decoration: none;
 }
 
 .back-to-top-link:hover {
-  color: white;
+  color: #e10600;
 }
 
 /*////////////////////////////////*/
@@ -240,11 +249,12 @@ footer {
 .flexbox-container {
   margin: 20px;
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .flexbox-item {
+  display: inline-block;
   background: rgba(247, 247, 247, 0);
   max-width: 40%;
   margin: 30px;
@@ -268,6 +278,11 @@ footer {
   border-bottom: 2px solid rgb(196, 196, 196);
   border-bottom-right-radius: 20px;
   overflow: hidden;
+}
+
+.top-video {
+  width: 100%;
+  max-width: 99%;
 }
 
 .flexbox-item-figure:hover {

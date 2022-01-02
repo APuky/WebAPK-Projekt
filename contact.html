@@ -10,14 +10,14 @@
     <meta name="author" content="Antun Pukanić" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="galleryStyles.css" />
+    
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Formula 1</title>
     <link
       rel="shortcut icon"
@@ -37,8 +37,8 @@
     <main style="background-image: url(./images/maybe-back.jpg)">
       <nav id="navbar">
         <ul>
-          <li><a href="index.html">F1 History</a></li>
-          <li><a href="news.html">News</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">F1 History</a></li>
           <li><a href="tracks.html">2021 Season Tracks</a></li>
           <li><a href="gallery.html">2021 Season Gallery</a></li>
           <li><a class="active" href="#contact">Contact</a></li>
@@ -64,14 +64,7 @@
             <label class="form-label" style="color: ivory" for="email"
               >Email:</label
             >
-            <input class="form-control" type="text" name="email" /><br />
-          </div>
-
-          <div class="form-outline mb-4" style="width: 40vw; margin: 0 auto">
-            <label class="form-label" style="color: ivory" for="email"
-              >Address:</label
-            >
-            <input class="form-control" type="text" name="address" /><br />
+            <input class="form-control" type="email" name="email" /><br />
           </div>
 
           <div class="form-outline mb-4" style="width: 40vw; margin: 0 auto">
@@ -81,8 +74,8 @@
             <select name="country" class="form-control" id="country">
               <option
                 value="0"
-                label="Select a country ... "
-                selected="selected"
+                label="Select a country... "
+                selected
               >
                 Select a country...
               </option>
@@ -223,18 +216,18 @@
                 <option value="Kyrgyzstan">Kyrgyzstan</option>
                 <option value="Lao">Lao People's Democratic Republic</option>
                 <option value="Latvia">Latvia</option>
-                <option value="Lebanon" selected>Lebanon</option>
+                <option value="Lebanon">Lebanon</option>
                 <option value="Lesotho">Lesotho</option>
                 <option value="Liberia">Liberia</option>
-                <option value="Libyan Arab Jamahiriya">
-                  Libyan Arab Jamahiriya
+                <option value="Libyaa">
+                  Libya
                 </option>
                 <option value="Liechtenstein">Liechtenstein</option>
                 <option value="Lithuania">Lithuania</option>
                 <option value="Luxembourg">Luxembourg</option>
                 <option value="Macau">Macau</option>
-                <option value="Macedonia">
-                  Macedonia, The Former Yugoslav Republic of
+                <option value="North Macedonia">
+                  North Macedonia
                 </option>
                 <option value="Madagascar">Madagascar</option>
                 <option value="Malawi">Malawi</option>
@@ -403,12 +396,11 @@
       </div>
     </main>
     <footer>
-      <h3 class="footer-text">
-        <br /><span class="span-left"
-          ><a class="back-to-top-link" href="#top">Back to Top</a>
-        </span>
-        Copyright &copy 2021 Web Aplikacije Course<br />
-        <br />
+      <h3 class="footer-text h3">
+        Copyright &copy 2021 Web Aplikacije Course
+        <a href="https://github.com/APuky/WebAPK-Projekt">
+          <img src="./images/github-icon-png-29.jpg" alt="" width="20px" />
+        </a>
       </h3>
     </footer>
     <script
