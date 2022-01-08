@@ -139,6 +139,7 @@ main {
   border-style: solid;
   float: left;
   margin: 15px;
+  overflow: hidden;
 
   transform-origin: 50% 50%;
   transition: transform 1s, filter 1s ease-in-out;
@@ -284,9 +285,15 @@ footer {
   overflow: hidden;
 }
 
-.top-video {
-  width: 100%;
-  max-width: 99%;
+.news-video {
+  width: 800px;
+  margin: auto;
+}
+
+video {
+  display: block;
+  margin: auto;
+  max-width: 100%;
 }
 
 .flexbox-item-figure:hover {
