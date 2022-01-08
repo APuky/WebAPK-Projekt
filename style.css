@@ -286,11 +286,6 @@ footer {
 }
 
 .news-video {
-  width: 800px;
-  margin: auto;
-}
-
-video {
   display: block;
   margin: auto;
   max-width: 100%;
