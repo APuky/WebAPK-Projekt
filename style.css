@@ -152,7 +152,7 @@ main {
 
 .figure-image {
   width: 24vw;
-  object-fit: cover;
+  object-fit: contain;
   width: 450px;
   height: 360px;
   transform-origin: 50% 65%;
