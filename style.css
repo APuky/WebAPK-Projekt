@@ -294,6 +294,10 @@ video {
   display: block;
   margin: auto;
   max-width: 100%;
+  border-bottom-right-radius: 20px;
+  border-right: 2px solid #e10600;
+  border-bottom: 2px solid #e10600;
+  margin-bottom: 40px;
 }
 
 .flexbox-item-figure:hover {
