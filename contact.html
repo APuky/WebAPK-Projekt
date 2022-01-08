@@ -44,20 +44,21 @@
           <li><a class="active" href="#contact">Contact</a></li>
         </ul>
       </nav>
+       <h1 class="main-headline">Contact me!</h1>
       <div>
         <form action="https://formspree.io/f/mvoloeyo" method="post">
           <div class="form-outline mb-4" style="width: 40vw; margin: 0 auto">
             <label class="form-label" style="color: ivory" for="first_name"
               >Name:</label
             >
-            <input class="form-control" type="text" name="first_name" /><br />
+            <input class="form-control" type="text" name="first_name" required /><br />
           </div>
 
           <div class="form-outline mb-4" style="width: 40vw; margin: 0 auto">
             <label class="form-label" style="color: ivory" for="last_name"
               >Surname:</label
             >
-            <input class="form-control" type="text" name="last_name" /><br />
+            <input class="form-control" type="text" name="last_name" required /><br />
           </div>
 
           <div class="form-outline mb-4" style="width: 40vw; margin: 0 auto">
@@ -71,7 +72,7 @@
             <label class="form-label" style="color: ivory" for="country"
               >Country:</label
             >
-            <select name="country" class="form-control" id="country">
+            <select name="country" class="form-control" id="country" required>
               <option
                 value="0"
                 label="Select a country... "
@@ -381,6 +382,7 @@
               rows="5"
               name="message"
               cols="30"
+              required
             ></textarea
             ><br />
           </div>

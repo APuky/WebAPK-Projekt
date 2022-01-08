@@ -152,8 +152,8 @@ main {
 .figure-image {
   width: 24vw;
   object-fit: cover;
-  max-width: 100%;
-  max-height: 100%;
+  width: 450px;
+  height: 360px;
   transform-origin: 50% 65%;
   transition: transform 1s, filter 10s ease-in-out;
   filter: brightness(100%);
@@ -168,6 +168,10 @@ main {
   float: left;
 }
 
+.padding-right {
+  padding-right: 40px;
+}
+
 figcaption {
   color: whitesmoke;
   font-family: "Saira Condensed", sans-serif;
@@ -177,7 +181,7 @@ figcaption {
 
 .main-paragraph {
   color: rgba(255, 255, 255, 0.808);
-  font-size: 1.2vw;
+  font-size: 24px;
   font-family: "Oswald", sans-serif;
   padding-left: 20px;
   text-shadow: 2px 2px rgb(0, 0, 0);
